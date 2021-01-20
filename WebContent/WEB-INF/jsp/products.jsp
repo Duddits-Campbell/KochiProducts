@@ -44,7 +44,6 @@
 	<div class="container contents">
 		<h1 class="main_title">商品一覧</h1>
 		<p>ようこそ、${user.name}さん。</p>
-
 		<!-- div class="main_image">
 			<img src="images/mainView.jpg">
 			<p>高知のおいしいもの届けます。</p>
