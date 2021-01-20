@@ -8,6 +8,7 @@
 <meta charset="UTF-8">
 <title>おすすめ高知</title>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link rel="stylesheet" href="./stylesheets/login.css">
 </head>
 <body>
 	<header>
@@ -28,17 +29,19 @@
 	    </div>
 	  </nav>
 	</header>
-	<h1>おすすめ高知へようこそ</h1>
-	<hr>
-	<% if (message != null) { %>
-	  <p><%= message %></p>
-	<% } %>
-	<form method="post">
-	  <label for="name">ユーザ名：</label>
-	  <input type="text" name="name" id="name" /><br />
-	  <label for="password">パスワード：</label>
-	  <input type="password" name="password" id="password" /><br />
-	  <input type="submit" value="ログイン" />
-	</form>
+	<main class="main">
+		<h1>おすすめ高知へようこそ</h1>
+		<hr>
+		<% if (message != null) { %>
+		  <p><%= message %></p>
+		<% } %>
+		<form method="post">
+		  <label for="name">ユーザ名：</label>
+		  <input type="text" name="name" id="name" /><br />
+		  <label for="password">パスワード：</label>
+		  <input type="password" name="password" id="password" /><br />
+		  <input type="submit" value="ログイン" />
+		</form>
+	</main>
 </body>
 </html>

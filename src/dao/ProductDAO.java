@@ -127,8 +127,8 @@ public class ProductDAO {
 		try {
 			connection = connect();
 			statement = connection.prepareStatement(sql);
-			statement.setString(1, keyword);
-			statement.setString(2, keyword);
+			statement.setString(1, "%" + keyword + "%");
+			statement.setString(2, "%" + keyword + "%");
 			result = statement.executeQuery();
 			while (result.next()) {
 				Product product = new Product(

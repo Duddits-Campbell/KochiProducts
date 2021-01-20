@@ -1,0 +1,17 @@
+/* .main_image img {
+	width: 100%;
+} */
+
+.main_image {
+	background-image: url(../images/mainView.jpg);
+	height: 300px;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	/* justify-content: center; */
+	font-size: 30px;
+}
+
+.banner {
+	margin-bottom: 10px;
+}
